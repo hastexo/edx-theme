@@ -236,6 +236,18 @@ header {
   }
 }
 
+// Override default uppercase text-transform in header
+header.global {
+  .nav-global {
+    div {
+      text-transform: none !important;
+    }
+    li {
+      text-transform: none !important;
+    }
+  }
+}
+
 // Set the logo image
 h1.logo {
   a {
