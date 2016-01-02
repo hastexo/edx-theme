@@ -187,6 +187,7 @@ $footer_margin: ($baseline/4) 0;
 //-----------------
 //  CSS BG Images
 //-----------------
+$bg-image: url('../themes/hastexo/images/background.png');
 $homepage-bg-image: url('../themes/hastexo/images/sunrise.jpg');
 
 $login-banner-image: none;
@@ -273,5 +274,18 @@ h1.logo {
     img {
       height: $logo-image-height;
     }
+  }
+}
+
+// Dark background main content on start page,
+// wavy background everywhere else
+.content-wrapper {
+  background-image: $bg-image;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+
+  section.home {
+    background-color: $secondary;
   }
 }
