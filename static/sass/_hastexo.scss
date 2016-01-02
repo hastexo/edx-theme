@@ -204,3 +204,20 @@ $video-thumb-url: '../themes/hastexo/images/edx.png';
     margin: 0 !important;
     text-align: right;
 }
+
+// additional customization
+// Display footer links inline, spaced apart by bullet characters
+.nav-colophon {
+  ol {
+    li {
+       display: inline;
+       &:before {
+         content: " &bull; ";
+       }
+       &:first-child:before {
+         content: "";
+       }
+    }
+  }
+}
+
