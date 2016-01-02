@@ -221,3 +221,12 @@ $video-thumb-url: '../themes/hastexo/images/edx.png';
   }
 }
 
+// Actually use the header link colors for header links
+header {
+  a {
+    color: $header-link-color;
+    &:hover {
+      color: $header-link-hover;
+    }
+  }
+}
