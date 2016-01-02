@@ -267,6 +267,23 @@ header {
   @include fixed-footer;
   // Suppress the margin that is normally on top of the footer
   margin-top: 0 !important;
+
+  // make the colophon float left, so that references (the "Powered by edX" logo)
+  // is top-aligned with the links
+  .colophon {
+    float: left;
+  }
+
+
+  // Make the Open edX logo rather small, but give it ample surrounding space
+  .references {
+    img {
+      max-height: 2em;
+      margin-left: 2em;
+      margin-right: 2em;
+    }
+  }
+
   footer {
     font-size: $footer-font-size;
     a {
