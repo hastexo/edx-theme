@@ -190,6 +190,8 @@ $register-banner-image: none;
 
 $video-thumb-url: '../themes/hastexo/images/edx.png';
 
+$logo-image-height: 1em;
+
 //-----------------
 //  Mixin Styles
 //-----------------
@@ -227,6 +229,15 @@ header {
     color: $header-link-color;
     &:hover {
       color: $header-link-hover;
+    }
+  }
+}
+
+// Set the logo image
+h1.logo {
+  a {
+    img {
+      height: $logo-image-height;
     }
   }
 }
