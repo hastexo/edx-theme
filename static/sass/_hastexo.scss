@@ -90,6 +90,9 @@ $header-graphic-sub-color: $lighter-base-font-color;
 $header-link-color: $white;
 $header-link-hover: $light-color;
 
+$footer-link-color: $header-link-color;
+$footer-link-hover: $header-link-hover;
+
 $button-color: $main-color;
 $button-archive-color: $gray-3;
 
@@ -232,6 +235,19 @@ header {
     }
     &:hover {
       color: $header-link-hover !important;
+    }
+  }
+}
+
+// Also set colors for footer links
+footer {
+  a {
+    color: $footer-link-color !important;
+    &:visited {
+      color: $footer-link-color !important;
+    }
+    &:hover {
+      color: $footer-link-hover !important;
     }
   }
 }
