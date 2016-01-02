@@ -289,3 +289,8 @@ h1.logo {
     background-color: $secondary;
   }
 }
+
+// Suppress the margin that is normally on top of the footer
+.wrapper-footer {
+  margin-top: 0 !important;
+}
