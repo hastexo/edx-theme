@@ -226,9 +226,12 @@ $logo-image-height: 1em;
 // Actually use the header link colors for header links
 header {
   a {
-    color: $header-link-color;
+    color: $header-link-color !important;
+    &:visited {
+      color: $header-link-color !important;
+    }
     &:hover {
-      color: $header-link-hover;
+      color: $header-link-hover !important;
     }
   }
 }
