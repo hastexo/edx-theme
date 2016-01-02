@@ -184,6 +184,9 @@ $header_image_margin: -77px;
 //FOOTER MARGIN
 $footer_margin: ($baseline/4) 0;
 
+// Footer height
+$footer_height: 2em;
+
 //-----------------
 //  CSS BG Images
 //-----------------
@@ -212,7 +215,24 @@ $logo-image-height: 1em;
     text-align: right;
 }
 
+@mixin fixed-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  max-height: $footer-height;
+  width: 100%;
+  z-index: 1;
+}
+
+@mixin accommodate-fixed-footer {
+  padding-bottom: $footer-height;
+}
+
 // additional customization
+body {
+  @include accommodate-fixed-footer;
+}
+
 // Display footer links inline, spaced apart by bullet characters
 .nav-colophon {
   ol {
@@ -243,15 +263,20 @@ header {
 }
 
 // Also set colors for footer links
-footer {
-  font-size: $footer-font-size;
-  a {
-    color: $footer-link-color !important;
-    &:visited {
+.wrapper-footer {
+  @include fixed-footer;
+  // Suppress the margin that is normally on top of the footer
+  margin-top: 0 !important;
+  footer {
+    font-size: $footer-font-size;
+    a {
       color: $footer-link-color !important;
-    }
-    &:hover {
-      color: $footer-link-hover !important;
+      &:visited {
+        color: $footer-link-color !important;
+      }
+      &:hover {
+        color: $footer-link-hover !important;
+      }
     }
   }
 }
@@ -292,9 +317,4 @@ h1.logo {
       min-height: 55vh;
     }
   }
-}
-
-// Suppress the margin that is normally on top of the footer
-.wrapper-footer {
-  margin-top: 0 !important;
 }
