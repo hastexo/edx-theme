@@ -48,7 +48,8 @@ $body-font-family: $sans-serif;
 $theme-serif-font: 'Open Sans';
 $serif: $theme-serif-font, $serif;
 
-
+$header-font-size: 13px;
+$footer-font-size: 13px;
 
 
 //-----------------
@@ -228,6 +229,7 @@ $logo-image-height: 1em;
 
 // Actually use the header link colors for header links
 header {
+  font-size: $header-font-size;
   a {
     color: $header-link-color !important;
     &:visited {
@@ -241,6 +243,7 @@ header {
 
 // Also set colors for footer links
 footer {
+  font-size: $footer-font-size;
   a {
     color: $footer-link-color !important;
     &:visited {
