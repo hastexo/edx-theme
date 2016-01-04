@@ -82,7 +82,7 @@ $very-light-text: $gray-1;
 
 $link-color: $dark-color;
 $link-color-d1: $dark-color;
-$link-hover: $light-color;
+$link-hover: $main-color;
 $site-status-color: $bg-color;
 
 $header-graphic-super-color: $dark-color;
@@ -90,7 +90,7 @@ $header-graphic-sub-color: $lighter-base-font-color;
 
 $header-color: $white;
 $header-link-color: $header-color;
-$header-link-hover: $light-color;
+$header-link-hover: $link-hover;
 
 $footer-color: $header-color;
 $footer-link-color: $header-link-color;
