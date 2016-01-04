@@ -239,7 +239,7 @@ body {
     li {
        display: inline;
        &:before {
-         content: " &bull; ";
+         content: " \002022 ";
        }
        &:first-child:before {
          content: "";
