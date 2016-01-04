@@ -241,7 +241,7 @@ body {
     li {
        display: inline;
        &:before {
-         content: " \2022 ";
+         content: " \2022  ";
        }
        &:first-child:before {
          content: "";
