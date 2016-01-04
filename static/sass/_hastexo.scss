@@ -88,9 +88,11 @@ $site-status-color: $bg-color;
 $header-graphic-super-color: $dark-color;
 $header-graphic-sub-color: $lighter-base-font-color;
 
-$header-link-color: $white;
+$header-color: $white;
+$header-link-color: $header-color;
 $header-link-hover: $light-color;
 
+$footer-color: $header-color;
 $footer-link-color: $header-link-color;
 $footer-link-hover: $header-link-hover;
 
@@ -239,7 +241,7 @@ body {
     li {
        display: inline;
        &:before {
-         content: " \002022 ";
+         content: " \2022 ";
        }
        &:first-child:before {
          content: "";
@@ -286,6 +288,7 @@ header {
 
   footer {
     font-size: $footer-font-size;
+    color: $footer-color;
     a {
       color: $footer-link-color !important;
       &:visited {
@@ -300,6 +303,7 @@ header {
 
 // Override default uppercase text-transform in header
 header.global {
+  color: $header-color;
   .nav-global {
     div {
       text-transform: none !important;
