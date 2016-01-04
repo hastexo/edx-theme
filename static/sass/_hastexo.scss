@@ -103,8 +103,8 @@ $shadow-color: $gray;
 
 // actions
 $button-bg-image: none;
-$button-bg-color: $dark-color;
-$button-bg-hover-color: $main-color;
+$button-bg-color: $gray-3;
+$button-bg-hover-color: $dark-color;
 
 // actions - primary
 $action-primary-bg: $main-color;
@@ -180,8 +180,10 @@ $sidebar-active-image: $gray-3;
 $form-bg-color: $gray-1;
 $modal-bg-color: $gray-1;
 
-$dropdown-bg-color: $header-bg;
-$dropdown-menu-bg-color: $header-bg;
+$dropdown-bg: $action-primary-bg;
+$dropdown-fg: $action-primary-fg;
+$dropdown-menu-bg: $dropdown-bg;
+$dropdown-menu-fg: $dropdown-fg;
 
 //TOP HEADER IMAGE MARGIN
 $header_image_margin: -77px;
@@ -315,10 +317,22 @@ header.global {
       text-transform: none !important;
     }
   }
+  .user {
+    background-color: $dropdown-bg !important;
+  }
+  .primary {
+    > a {
+      background-color: $transparent !important;
+      text-shadow: none !important;
+      box-shadow: none !important;
+    }
+  }
   .dropdown {
-    background-color: $dropdown-bg-color !important;
+    color: $dropdown-fg !important;
+    background-color: $dropdown-bg !important;
     &-menu {
-      background-color: $dropdown-menu-bg-color !important;
+      color: $dropdown-menu-fg !important;
+      background-color: $dropdown-menu-bg !important;
     }
   }
 }
