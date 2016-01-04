@@ -180,6 +180,9 @@ $sidebar-active-image: $gray-3;
 $form-bg-color: $gray-1;
 $modal-bg-color: $gray-1;
 
+$dropdown-bg-color: $header-bg;
+$dropdown-menu-bg-color: $header-bg;
+
 //TOP HEADER IMAGE MARGIN
 $header_image_margin: -77px;
 
@@ -310,6 +313,12 @@ header.global {
     }
     li {
       text-transform: none !important;
+    }
+  }
+  .dropdown {
+    background-color: $dropdown-bg-color !important;
+    &-menu {
+      background-color: $dropdown-menu-bg-color !important;
     }
   }
 }
