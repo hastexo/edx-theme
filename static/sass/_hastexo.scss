@@ -96,15 +96,15 @@ $footer-color: $header-color;
 $footer-link-color: $header-link-color;
 $footer-link-hover: $header-link-hover;
 
-$button-color: $main-color;
+$button-color: $dark-color;
 $button-archive-color: $gray-3;
 
 $shadow-color: $gray;
 
 // actions
 $button-bg-image: none;
-$button-bg-color: $gray-3;
-$button-bg-hover-color: $gray-1;
+$button-bg-color: $dark-color;
+$button-bg-hover-color: $main-color;
 
 // actions - primary
 $action-primary-bg: $main-color;
