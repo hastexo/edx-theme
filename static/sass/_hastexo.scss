@@ -384,3 +384,8 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: none !important;
   letter-spacing: normal !important;
 }
+
+// Apparently, someone forgot this in the default SCSS
+button, input, select, textarea, form#wiki_revision .CodeMirror {
+  font-family: $sans-serif;
+}
