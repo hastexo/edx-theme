@@ -334,6 +334,12 @@ header.global {
     &-menu {
       color: $dropdown-menu-fg !important;
       background-color: $dropdown-menu-bg !important;
+      a {
+        &:hover {
+          color: $dropdown-menu-fg !important;
+          background-color: $dark-color !important;
+        }
+      }
     }
   }
 }
