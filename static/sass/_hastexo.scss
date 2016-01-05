@@ -269,7 +269,23 @@ header {
   }
 }
 
+
 // Also set colors for footer links
+footer {
+  margin-top: 0.5em !important;
+  font-size: $footer-font-size;
+  color: $footer-color;
+  a {
+    color: $footer-link-color !important;
+    &:visited {
+      color: $footer-link-color !important;
+    }
+    &:hover {
+      color: $footer-link-hover !important;
+    }
+  }
+}
+
 .wrapper-footer {
   @include fixed-footer;
   // Suppress the margin that is normally on top of the footer
@@ -281,27 +297,12 @@ header {
     float: left;
   }
 
-
   // Make the Open edX logo rather small, but give it ample surrounding space
   .references {
     img {
       max-height: 2em;
       margin-left: 2em;
       margin-right: 2em;
-    }
-  }
-
-  footer {
-    font-size: $footer-font-size;
-    color: $footer-color;
-    a {
-      color: $footer-link-color !important;
-      &:visited {
-        color: $footer-link-color !important;
-      }
-      &:hover {
-        color: $footer-link-hover !important;
-      }
     }
   }
 }
