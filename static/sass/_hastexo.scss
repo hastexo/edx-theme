@@ -375,10 +375,27 @@ h1.logo {
     .outer-wrapper {
       animation: none !important;
     }
-    .title {
+    .splash {
+      background-color: $transparent !important;
       transition: none !important;
       hgroup {
         transition: none !important;
+      }
+      h1 {
+        color: white !important;
+        text-shadow: 2px 2px black !important;
+	font-size: 500%;
+	font-weight: bold;
+      }
+      h2 {
+        color: white !important;
+        text-shadow: 2px 2px black !important;
+	font-size: 300%;
+	font-weight: bold;
+      }
+      p {
+        color: white !important;
+        text-shadow: 2px 2px black !important;
       }
     }
   }
