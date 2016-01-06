@@ -10,9 +10,10 @@ from django.core.urlresolvers import reverse
     <div class="outer-wrapper">
       <div class="title splash">
         <hgroup>
-              <h1>${_("Learn better")}</h1>
-              <h2>${_("Real technology")}. ${_("Brought to you by real experts.")}</h2>
+              <h1>${_("Real technology.")}</h1>
+              <h2>${_("Brought to you by real experts.")}</h2>
         </hgroup>
+	<p>${_(At hastexo Academy, you learn about advanced technology, on real live systems, guided by first-rate experts in the field.)}</p>
         % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
           <div class="course-search">
             <form method="get" action="/courses">
